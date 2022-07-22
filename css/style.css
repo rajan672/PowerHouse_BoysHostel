@@ -1,0 +1,292 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.mydiv {
+  background-image: url("../images/1.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  min-height: 660px;
+  font-family: "Lobster", cursive;
+}
+#brand-name {
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Lobster", cursive;
+}
+
+/* ..................textholder................. */
+.textholder {
+  padding-top: 250px;
+}
+.textholder h2 {
+  font-size: 42px;
+}
+.textholder h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+/* ................service..................... */
+
+.service {
+  padding: 100px 0px 60px;
+  min-height: 640px;
+}
+.service h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+}
+
+.rowsetting {
+  margin: 80px 0px;
+}
+.rowsetting h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+}
+.rowsetting p {
+  padding: 10px;
+  color: #6c757d;
+}
+
+/* ..............PHOTO'S............. */
+
+.photo {
+  min-height: 1100px;
+  width: 100%;
+  padding: 100px 0px 50px;
+}
+
+.photo h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+}
+
+.card {
+  margin-top: 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* ................stats..................... */
+
+.stats {
+  padding: 100px 0px 60px;
+  min-height: 640px;
+}
+.stats h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+}
+
+/* ......Service----- page start............. */
+.diagonal {
+  position: relative;
+}
+.diagonal:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(160deg, rgb(54, 53, 53) 55%, #fff 0%);
+}
+
+.diagonal h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+  color: #ffcc00;
+}
+
+.project {
+  margin: 80px 0;
+  padding: 20px;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+}
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  transform: translateY(-20px);
+}
+.project > h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+/* ......Service------ page closed............. */
+
+/*-------------FAQ Start-------  */
+.FAQ h1 {
+  font-size: 45px;
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  padding: 10px;
+}
+.FAQ > p {
+  font-size: 20px;
+}
+.accordion {
+  max-width: 800px;
+}
+
+.accordion .contentBx {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: rgb(54, 53, 53);
+  color: #fff;
+  cursor: pointer;
+}
+.accordion .contentBx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+.accordion .contentBx.active .label::before {
+  content: "-";
+}
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  color: #262626;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.accordion .contentBx.active .content {
+  min-height: 100px;
+  padding: 10px;
+}
+
+/* ------------FAQ Close------ */
+
+/* .............about......... */
+.about {
+  min-height: 700px;
+  padding: 100px 0px 60px;
+  width: 100%;
+}
+
+.about h2 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+}
+
+.teamsett {
+  margin-top: 40px;
+}
+.mer{
+  height: 500px;
+  width: 100%;
+}
+.figure:hover {
+  transform: scale(1.05);
+  box-shadow: 12px 12px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 12px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 12px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ...........FOOTER.................. */
+.foot-head h3 {
+  font-family: "Lobster", cursive;
+}
+.link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ...............Responsive............ */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .photo {
+    min-height: 900px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .mydiv {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .textholder h1 {
+    font-size: 52px;
+    font-weight: bold;
+  }
+
+  .service {
+    min-height: 1200px;
+  }
+  .photo {
+    min-height: 2800px;
+  }
+
+  .ourteam {
+    min-height: 1300px;
+  }
+}
+
+/* Extra small devices (phones, 479px and down) */
+@media (max-width: 479px) {
+  .mydiv {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #brand-name {
+    font-size: 25px;
+  }
+  .textholder h2 {
+    font-size: 22px;
+  }
+  .textholder h1 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  .mer{
+    height: 500px;
+    width: 100%;
+  }
+  .service {
+    padding: 100px 0px 60px;
+    min-height: 1200px;
+  }
+
+  .photo {
+    min-height: 2450px;
+  }
+
+  .ourteam {
+    min-height: 1400px;
+  }
+}
